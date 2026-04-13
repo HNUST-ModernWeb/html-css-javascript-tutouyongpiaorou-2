@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="zh-CN"> <!-- 根元素，设置语言为简体中文 -->
+<head>
+    <!-- 头部开始：包含元数据和页面信息 -->
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8，支持中文显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式设计，确保在不同设备上正常显示 -->
+    <title>个人信息卡片</title> <!-- 页面标题，显示在浏览器标签页上 -->
+    <link rel="stylesheet" href="style.css"> <!-- 引入外部CSS样式文件 -->
+</head>
+<body>
+    <!-- 页面主体内容开始 -->
+
+    
+
+    <!-- 动态背景容器 -->
+    <div class="bg-animation"></div>
+
+    <!-- 主标题 -->
+    <h1>个人信息卡片</h1>
+
+    <!-- 主题切换按钮 -->
+    <button id="theme-toggle">切换主题</button>
+
+    <!-- 卡片主容器 -->
+    <div class="card-container">
+        <!-- 头像区域 -->
+        <div class="avatar-container">
+            <!-- 头像图片，默认使用占位图 -->
+            <img id="avatar" src="https://via.placeholder.com/100" alt="头像">
+            <!-- 头像上传输入框，只接受图片文件 -->
+            <input type="file" id="avatar-upload" accept="image/*">
+        </div>
+
+        <!-- 信息区域 -->
+        <div class="info-section">
+            <!-- 姓名信息项 -->
+            <div class="info-item">
+                <label class="info-label">姓名</label> <!-- 姓名标签 -->
+                <div id="name-display" class="info-display">请输入姓名</div> <!-- 姓名显示区域 -->
+                <input type="text" id="name-input" class="info-input" placeholder="请输入姓名"> <!-- 姓名输入框 -->
+            </div>
+
+            <!-- 个人简介信息项 -->
+            <div class="info-item">
+                <label class="info-label">个人简介</label> <!-- 简介标签 -->
+                <div id="bio-display" class="info-display">请输入个人简介</div> <!-- 简介显示区域 -->
+                <textarea id="bio-input" class="info-input" placeholder="介绍一下自己"></textarea> <!-- 简介输入框（多行文本） -->
+            </div>
+        </div>
+
+        <!-- 保存按钮 -->
+        <button id="save-btn">保存</button>
+    </div>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="script.js"></script>
+</body>
+</html>
